@@ -54,7 +54,10 @@ public class aplicacao {
 
       switch (formaplana){
         case 1:
-
+         instancia um objeto
+         espacial.x = 10;
+         espacial.y = 30;
+         espacial.Quadrado();
         case 2:
 
         case 3:
