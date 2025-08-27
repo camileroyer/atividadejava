@@ -28,7 +28,7 @@ public class Aplicacao {
         }
     }
 
-    // Método principal para iniciar o programa
+
     public static void main(String[] args) {
         new Aplicacao().exibir();
     }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class geometriaespacial extends aplicacao {
+public class GeometriaEspacial extends Aplicacao {
     public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);
 
