@@ -1,3 +1,3 @@
-public class geometriaespacial {
+public class GeometriaEspacial {
     
 }
