@@ -25,6 +25,14 @@ public class aplicacao {
 
       switch (formaespacial){
         case 1:
+        int rcilindro;
+        int hcilindro;
+        System.out.printf("Qual o RAIO?");
+        rcilindro = ler.nextInt();
+        System.out.printf("Qual a ALTURA?");
+        hcilindro = ler.nextInt();
+
+        
 
         case 2:
 
