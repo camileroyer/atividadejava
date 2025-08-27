@@ -12,38 +12,7 @@ public class aplicacao {
       x = ler.nextInt();
 
       if (x == 1){
-      System.out.println("1) Cilindro");
-      System.out.println("2) Pirâmide");
-      System.out.println("3) Esfera");
-      System.out.println("4) Cone");
-      System.out.println("5) Troncos");
-      System.out.println("6) Prismas");
-      
-      int formaespacial;
-      System.out.printf("Qual figura você quer?");
-      formaespacial = ler.nextInt();
-
-      switch (formaespacial){
-        case 1:
-        int rcilindro;
-        int hcilindro;
-        System.out.printf("Qual o RAIO?");
-        rcilindro = ler.nextInt();
-        System.out.printf("Qual a ALTURA?");
-        hcilindro = ler.nextInt();
-
         
-
-        case 2:
-
-        case 3:
-
-        case 4:
-
-        case 5: 
-
-        case 6:
-      }
         }
     
         else if (x == 2){
