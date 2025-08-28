@@ -17,7 +17,7 @@ public class Aplicacao {
                     new GeometriaPlana().exibir();
                     break;
                 case 2:
-                    new GeometriaEspacial().exibir(); 
+                    //new GeometriaEspacial().exibir(); 
                     break;
                 case 0:
                     System.out.println("Saindo...");

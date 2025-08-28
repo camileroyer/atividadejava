@@ -1,49 +1,38 @@
 import java.util.Scanner;
 
-public class GeometriaEspacial extends Aplicacao {
-    public static void main(String[] args) {
-    Scanner ler = new Scanner(System.in);
+public class GeometriaEspacial  {
+   
+     public void exibir() {
+        Scanner ler = new Scanner(System.in);
+        while (true) {
+            System.out.println("1) Cilindro");
+            System.out.println("2) Pirâmide Triangular");
+            System.out.println("3) Esfera");
+            System.out.println("4) Cone");
+            System.out.println("5) Troncos");
+            System.out.println("6) Prismas");
+            System.out.println("7) - Voltar");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha: ");
+            int formaespacial = ler.nextInt();
 
-      System.out.println("1) Cilindro");
-      System.out.println("2) Pirâmide Triangular");
-      System.out.println("3) Esfera");
-      System.out.println("4) Cone");
-      System.out.println("5) Troncos");
-      System.out.println("6) Prismas");
-      
-      int formaespacial;
-      System.out.printf("Qual figura você quer?");
-      formaespacial = ler.nextInt();
-
-      // NomeDaClasse NomeDoObjeto = new NomeDoConstrutor();
-      geometriaespacial objesp = new geometriaespacial();
-      switch (formaespacial){
-        case 1:    
-        
-        objesp.cilindro();
-        break;
-
-        case 2:
-        objesp.piramide();
-        break;
-
-        case 3:
-        objesp.esfera();
-        break;
-
-        case 4:
-        objesp.cone();
-        break;
-
-        case 5:
-        objesp.tronco();
-        break;
-      }
+            switch (formaespacial) {
+                case 1: cilindro(); break;
+                case 2: piramide(); break;
+                case 3: esfera(); break;
+                case 4: cone(); break;
+                case 5: tronco(); break;
+                case 6: prismas(); break;
+                case 7: return;
+                case 0: System.exit(0);
+                default: System.out.println("Opção inválida!");
+            }
+        }
     }
 
 
     //CILINDRO
-      private void cilindro() {
+      public void cilindro() {
         Scanner ler = new Scanner(System.in);
 
         int rcilindro;
@@ -75,7 +64,7 @@ public class GeometriaEspacial extends Aplicacao {
 
 
         //PIRAMIDE
-        private void piramide() {
+        public void piramide() {
         Scanner ler = new Scanner(System.in);
 
         int bpiramide;
@@ -112,7 +101,7 @@ public class GeometriaEspacial extends Aplicacao {
 
 
         //ESFERA
-        private void esfera() {
+        public void esfera() {
         Scanner ler = new Scanner(System.in);
 
         int resfera;
@@ -136,7 +125,7 @@ public class GeometriaEspacial extends Aplicacao {
 
 
         //CONE
-        private void cone() {
+        public void cone() {
         Scanner ler = new Scanner(System.in);
 
         int rcone;
@@ -171,7 +160,7 @@ public class GeometriaEspacial extends Aplicacao {
         }
 
         //TRONCO
-        private void tronco() {
+        public void tronco() {
         Scanner ler = new Scanner(System.in);
 
         int rpequenotronco;
@@ -195,5 +184,41 @@ public class GeometriaEspacial extends Aplicacao {
             else if (escolhatronco == 2) {
                 System.out.printf("não tem...");
             }
+        }
+
+        public void prismas(){
+        Scanner ler = new Scanner(System.in);
+
+        int hprisma;
+        int pprisma;
+        int lprisma;
+        System.out.printf("Qual o LADO do prisma?");
+        lprisma = ler.nextInt();
+        System.out.printf("Qual a ALTURA do prisma?");
+        hprisma = ler.nextInt();
+        System.out.printf("Qual o SEMI-PERÍMETRO da pirâmide?");
+        pprisma = ler.nextInt();
+
+        System.out.println("1) Área lateral");
+        System.out.println("2) Área total");
+        System.out.println("3) Volume");
+        System.out.println("O que tu quer calcular?");
+        int escolhaprisma = ler.nextInt();
+
+        int baseprisma = lprisma * pprisma;
+        if (escolhaprisma == 1) {
+                int parealateral = 2 * pprisma * hprisma;
+                System.out.printf("Area Lateral:" +parealateral);
+            }
+        else if (escolhaprisma == 2) {
+            int prismaareatotal = ((2 * pprisma) * hprisma) + (2 * baseprisma);
+            System.out.printf("Area Total: "+prismaareatotal);
+            }
+
+        else if (escolhaprisma == 3) {
+            int volumeprisma = baseprisma * hprisma;
+            System.out.printf("Volume: "+volumeprisma);
+        }
+
         }
     }
